@@ -1,17 +1,6 @@
 ## API-L
 
-Created a HTTP-API that allows reading, writing, deleting & updating data from database.
-
-### Application routes
-POST/ - creates a new person
-
-GET/ - view a list of all people
-
-GET/{id} - view a single person
-
-PUT/{id} - update person
-
-DELETE/{id} - delete a person
+Created a HTTP-API that allows reading, writing, deleting & updating data from database using FastAPI and MongoDB.
 
 
 ### Installing Development Environment
