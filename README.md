@@ -14,15 +14,23 @@ PUT/{id} - update person
 DELETE/{id} - delete a person
 
 
-### How to run project
-  #install requirements
+### Installing Development Environment
+#### 1. Install pipenv
+
+     pip install --user pipenv
+   
+#### 2. Create Virtual Environment & Install dependencies
+      
+     pipenv install -r requirements.txt --python=python3
+   
+#### 3. Activate Virtual Environment
+
+     pipenv shell
+     
+#### 4. Run Server
   
-  `pip install -r requirements.txt`
-  
-  #configure location of database
-  
-  `export MONGODB_URL="mongodb://localhost:27017/<db>?retryWrites=true&w=majority"`
-  
-  #start the service
-  
-  `uvicorn main:app --reload`
+     uvicorn main:app --reload
+   
+#### 5. Launch browser
+
+     Launch browser to http://localhost:8000/docs/ 
