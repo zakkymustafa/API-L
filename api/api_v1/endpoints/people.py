@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
 from fastapi import APIRouter, Body, status, HTTPException
 from typing import List
+from db.connect import db
 
 
 router = APIRouter()

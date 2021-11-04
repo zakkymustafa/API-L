@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from models.usermodel import UserModel
-
+from db.connect import db
 
 
 router = APIRouter()
